@@ -16,6 +16,11 @@
 		24130E8129C416BE00B538AD /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24130E8029C416BE00B538AD /* RoundedView.swift */; };
 		24130E8329C93E3B00B538AD /* RoundedFilledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24130E8229C93E3B00B538AD /* RoundedFilledView.swift */; };
 		24130E8529C93F6000B538AD /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24130E8429C93F6000B538AD /* BackgroundView.swift */; };
+		24324BA729DBC0F20089B807 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24324BA629DBC0F20089B807 /* HeaderView.swift */; };
+		24324BA929DCF8240089B807 /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24324BA829DCF8240089B807 /* TargetView.swift */; };
+		24324BAB29DCF8E20089B807 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24324BAA29DCF8E20089B807 /* SliderView.swift */; };
+		24324BAD29DCFC230089B807 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24324BAC29DCFC230089B807 /* PointsView.swift */; };
+		24324BAF29DD0C0A0089B807 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24324BAE29DD0C0A0089B807 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		24130E8029C416BE00B538AD /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		24130E8229C93E3B00B538AD /* RoundedFilledView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedFilledView.swift; sourceTree = "<group>"; };
 		24130E8429C93F6000B538AD /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		24324BA629DBC0F20089B807 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		24324BA829DCF8240089B807 /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
+		24324BAA29DCF8E20089B807 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		24324BAC29DCFC230089B807 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
+		24324BAE29DD0C0A0089B807 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				24130E7129C16C5000B538AD /* Game.swift */,
+				24324BAE29DD0C0A0089B807 /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -121,6 +132,10 @@
 				24130E8029C416BE00B538AD /* RoundedView.swift */,
 				24130E8229C93E3B00B538AD /* RoundedFilledView.swift */,
 				24130E8429C93F6000B538AD /* BackgroundView.swift */,
+				24324BA629DBC0F20089B807 /* HeaderView.swift */,
+				24324BA829DCF8240089B807 /* TargetView.swift */,
+				24324BAA29DCF8E20089B807 /* SliderView.swift */,
+				24324BAC29DCFC230089B807 /* PointsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,11 +249,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				24130E8529C93F6000B538AD /* BackgroundView.swift in Sources */,
+				24324BAF29DD0C0A0089B807 /* Constants.swift in Sources */,
 				24130E8129C416BE00B538AD /* RoundedView.swift in Sources */,
 				24130E6329C14F3D00B538AD /* MainView.swift in Sources */,
+				24324BAB29DCF8E20089B807 /* SliderView.swift in Sources */,
 				24130E8329C93E3B00B538AD /* RoundedFilledView.swift in Sources */,
 				24130E7229C16C5000B538AD /* Game.swift in Sources */,
+				24324BA929DCF8240089B807 /* TargetView.swift in Sources */,
+				24324BAD29DCFC230089B807 /* PointsView.swift in Sources */,
 				24130E6129C14F3D00B538AD /* BullseyeApp.swift in Sources */,
+				24324BA729DBC0F20089B807 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,8 +17,7 @@ struct BackgroundView: View {
         }
         .padding()
         .background(
-            Color("BackgroundColor")
-                .ignoresSafeArea()
+            RingsView()
         )
     }
 }
@@ -36,7 +35,6 @@ struct TopView: View {
             RoundedFilledView(systemName: "list.dash")
         }
     }
-    
 }
 
 struct BottonView: View {
@@ -48,7 +46,6 @@ struct BottonView: View {
             NumberView(title: "Round", text: String(game.round))
         }
     }
-    
 }
 
 struct NumberView: View {
@@ -66,16 +63,36 @@ struct NumberView: View {
                 .kerning(-0.2)
                 .bold()
                 .font(.title3)
-                .frame(width: 68, height: 56)
+                .frame(width: Constants.General.roundRectViewWidth, height: Constants.General.roundRectViewHeight)
                 .foregroundColor(Color("TextColor"))
                 .overlay(
-                    RoundedRectangle(cornerRadius: 21)
-                        .stroke(lineWidth: 2)
+                    RoundedRectangle(cornerRadius: Constants.General.roundRectCornerRadius)
+                        .stroke(lineWidth: Constants.General.strokeWidth)
                         .foregroundColor(Color("ButtonStrokeColor"))
                 )
         }
     }
-    
+}
+
+struct RingsView: View {
+    @Environment(\.colorScheme) var colorScheme
+    var body: some View {
+        ZStack {
+            Color("BackgroundColor")
+                .ignoresSafeArea()
+            ForEach(1..<6) { ring in
+                let size = CGFloat(ring * 100)
+                let opacity = colorScheme == .dark ? 0.1 : 0.3
+                Circle()
+                    .stroke(lineWidth: 20)
+                    .fill(
+                        RadialGradient(gradient: Gradient(colors: [Color("RingColor").opacity(opacity * 0.8), Color("RingColor").opacity(0)]), center: .center, startRadius: 100, endRadius: 300)
+                    )
+                    .frame(width: size, height: size)
+            }
+        }
+        
+    }
 }
 
 struct BackgroundView_Previews: PreviewProvider {
